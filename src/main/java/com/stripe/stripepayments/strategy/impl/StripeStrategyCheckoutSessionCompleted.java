@@ -17,4 +17,5 @@ public class StripeStrategyCheckoutSessionCompleted implements StripeStrategy {
     public Event process(Event event) {
         return null;
     }
+
 }
