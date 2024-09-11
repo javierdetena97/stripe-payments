@@ -12,3 +12,9 @@ logging:
     org:
       hibernate:
         SQL: DEBUG
+
+stripe:
+  endpoint:
+    secret: whsec_0d54a6a29d3c0c787fe39edf58c49409a5a325a88d7e68da0fb3113567ad0e3b
+  secret:
+    key: sk_test_51PovoZ04aQygKUd4KMze6CAzXvOEzUOEux5qpBzgHAlIPN2r0dI5ppDDaf9qXLFqsf2LiZNagfVYTi1HuxhieIpp00KKydnQG4
