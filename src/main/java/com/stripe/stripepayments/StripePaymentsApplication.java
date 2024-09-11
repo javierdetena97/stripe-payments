@@ -1,4 +1,4 @@
-package com.stripe.stripe_payments;
+package com.stripe.stripepayments;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

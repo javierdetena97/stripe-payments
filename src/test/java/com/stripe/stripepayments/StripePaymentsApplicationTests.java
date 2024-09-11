@@ -1,4 +1,4 @@
-package com.stripe.stripe_payments;
+package com.stripe.stripepayments;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
