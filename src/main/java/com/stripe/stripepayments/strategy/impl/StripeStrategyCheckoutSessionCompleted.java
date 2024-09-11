@@ -27,7 +27,7 @@ public class StripeStrategyCheckoutSessionCompleted implements StripeStrategy {
     public Event process(Event event) {
         var session = this.deserialize(event);
         return Optional.of(event)
-                .map(givenEvent -> paymentRepository.findByPaymentId(session.getPaymentIntent()))
+                .map(givenEvent -> paymentRepository.findByPaymentIntentId(session.getPaymentIntent()))
                 .map(payment -> setProductId(payment, session.getMetadata().get("product_id")))
                 .map(paymentRepository::save)
                 .map(given -> event)
