@@ -26,7 +26,7 @@ public class StripeServiceImpl implements StripeService {
     private final List<StripeStrategy> stripeStrategies;
 
     public StripeServiceImpl(@Value("${stripe.endpoint.secret}") String endpointSecret, List<StripeStrategy> stripeStrategies,
-                             @Value("${stripe.endpoint.key}") String stripeKey) {
+                             @Value("${stripe.secret.key}") String stripeKey) {
         Stripe.apiKey = stripeKey;
         this.endpointSecret = endpointSecret;
         this.stripeStrategies = Collections.unmodifiableList(stripeStrategies);
