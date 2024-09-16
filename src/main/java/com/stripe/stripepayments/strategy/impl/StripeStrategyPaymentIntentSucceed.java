@@ -20,7 +20,7 @@ public class StripeStrategyPaymentIntentSucceed implements StripeStrategy {
 
     @Override
     public boolean isApplicable(Event event) {
-        return StripeEventEnum.PAYMENT_INTENT_SUCCEEDED.equals(event.getType());
+        return StripeEventEnum.PAYMENT_INTENT_SUCCEEDED.value.equals(event.getType());
     }
 
     @Override
